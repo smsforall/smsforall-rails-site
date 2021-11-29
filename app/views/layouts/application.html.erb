@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Valoralo - Recibe opiniones, comentarios, testimonios, felicitaciones, revisiones y quejas de tus clientes en piloto automático</title>
+    <title>Valoralo.mx | En Valoralo recibe opiniones, felicitaciones, comentarios, quejas, agradecimientos y más en piloto automático</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Valoralo.mx" />
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Istok+Web:400,700&display=swap" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="canvas_styles.css" type="text/css" /> -->
+    <!--  -->
+    <!-- <link rel="stylesheet" href="css/font&#45;icons.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="valoralo_main.css" type="text/css" /> -->
+    <!--  -->
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+  <body class="stretched">
+    <!-- Document Wrapper
+      ============================================= -->
+      <div id="wrapper" class="clearfix">
+
+        <header id="header" class="border-bottom header-size-custom" data-sticky-shrink="false">
+          <div id="header-wrap">
+            <div class="container">
+              <div class="header-row justify-content-lg-between">
+
+                <!-- Logo
+                  ============================================= -->
+                  <div id="logo" class="me-lg-0">
+                    <a href="index.html" class="retina-logo" data-dark-logo="/images/logo_valoralo_black.png">
+                      <%= image_tag "landing_page/logo_valoralo_black.png", alt: "Logo valoralo.mx"%>
+                  </div><!-- #logo end -->
+
+                  <div id="primary-menu-trigger">
+                    <svg class="svg-trigger" viewBox="0 0 100 100">
+                      <d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                      <path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+                  </div>
+
+                  <nav class="primary-menu">
+                    <ul class="menu-container not-dark one-page-menu">
+                      <li class="menu-item"><a class="menu-link" href=""><div>Precio</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href=""><div>Quienes somos</div></a></li>
+                      <li class="menu-item"><a class="menu-link" href=""><div>Contacto</div></a></li>
+                    </ul>
+                  </nav><!-- #primary-menu end -->
+              </div>
+            </div>
+          </div>
+          <div class="header-wrap-clone"></div>
+
+        </header><!-- #header end -->
+
+        <section id="content">
+          <%= yield %>
+        </div>
+
+        <footer id="footer" class="dark">
+          <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+
+              <div class="container clearfix">
+
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-md-6">
+                    Copyrights &copy; 2022 All Rights Reserved by
+                    <a href="https://www.pacientesweb.com">
+                      Pacientes Web México
+                    </a>
+                    <br>
+                    <div class="copyright-links">
+                      <a href="https://www.pacientesweb.com/terminos-de-uso">
+                        Términos de uso
+                      </a>
+                      /
+                      <a href="https://www.pacientesweb.com/politicas-de-privacidad">
+                        Políticas de Privacidad
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-flex justify-content-md-end mt-4 mt-md-0">
+                    <div class="copyrights-menu copyright-links mb-0 clearfix">
+                      <a href="">Inicio</a>
+                      /
+                      <a href="">Quienes Somos</a>
+                      /
+                      <a href="">Precios</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+      </div>
+
+      <div id="gotoTop" class="icon-angle-up"></div>
+
+    </body>
 </html>
