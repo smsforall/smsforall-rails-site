@@ -83,7 +83,6 @@ window.scwEvents = window.scwEvents || {};
 	SEMICOLON.initialize = {
 
 		init: function(){
-			SEMICOLON.initialize.defaults();
 			SEMICOLON.initialize.goToTop();
 			SEMICOLON.initialize.dataResponsiveClasses();
 			SEMICOLON.initialize.dataResponsiveHeights();
@@ -228,77 +227,6 @@ window.scwEvents = window.scwEvents || {};
 			}
 
 			this.jsLinking( element, settings );
-		},
-
-		defaults: function(){
-			let easingJs = {
-				default: 'body',
-				file: 'plugins.easing.js',
-				error: 'plugins.easing.js: Plugin could not be loaded',
-				pluginfn: 'typeof jQuery.easing["easeOutQuad"] !== "undefined"',
-				trigger: 'pluginEasingReady',
-				class: 'has-plugin-easing'
-			};
-
-			let bootstrapJs = {
-				default: 'body',
-				file: 'plugins.bootstrap.js',
-				error: 'plugins.bootstrap.js: Plugin could not be loaded',
-				pluginfn: 'typeof bootstrap !== "undefined"',
-				trigger: 'pluginBootstrapReady',
-				class: 'has-plugin-bootstrap'
-			};
-
-			// let jRes = jRespond([
-			// 	{
-			// 		label: 'smallest',
-			// 		enter: 0,
-			// 		exit: 575
-			// 	},{
-			// 		label: 'handheld',
-			// 		enter: 576,
-			// 		exit: 767
-			// 	},{
-			// 		label: 'tablet',
-			// 		enter: 768,
-			// 		exit: 991
-			// 	},{
-			// 		label: 'laptop',
-			// 		enter: 992,
-			// 		exit: 1199
-			// 	},{
-			// 		label: 'desktop',
-			// 		enter: 1200,
-			// 		exit: 10000
-			// 	}
-			// ]);
-      //
-			// jRes.addFunc([
-			// 	{
-			// 		breakpoint: 'desktop',
-			// 		enter: function() { $body.addClass('device-xl'); },
-			// 		exit: function() { $body.removeClass('device-xl'); }
-			// 	},{
-			// 		breakpoint: 'laptop',
-			// 		enter: function() { $body.addClass('device-lg'); },
-			// 		exit: function() { $body.removeClass('device-lg'); }
-			// 	},{
-			// 		breakpoint: 'tablet',
-			// 		enter: function() { $body.addClass('device-md'); },
-			// 		exit: function() { $body.removeClass('device-md'); }
-			// 	},{
-			// 		breakpoint: 'handheld',
-			// 		enter: function() { $body.addClass('device-sm'); },
-			// 		exit: function() { $body.removeClass('device-sm'); }
-			// 	},{
-			// 		breakpoint: 'smallest',
-			// 		enter: function() { $body.addClass('device-xs'); },
-			// 		exit: function() { $body.removeClass('device-xs'); }
-			// 	}
-			// ]);
-
-			SEMICOLON.initialize.functions( easingJs );
-			SEMICOLON.initialize.functions( bootstrapJs );
 		},
 
 		goToTop: function(){

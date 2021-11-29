@@ -9,6 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 require("jquery")
+require('jquery.easing')
 import "../custom/functions";
 
 Rails.start()
