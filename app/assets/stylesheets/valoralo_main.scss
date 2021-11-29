@@ -52,6 +52,12 @@
 .irs-line-left,
 .irs-line-right { background-color: rgba(232, 60, 60, 0.3); }
 
+@media (max-width: 450px) {
+  .card-customer-service {
+    height: 678px !important;
+  }
+}
+
 @media (max-width: 992px) {
   .card-customer-service {
     margin-top: 0px;
