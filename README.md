@@ -1,11 +1,8 @@
-# README
+# About this project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# About requirements
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby 3.2.2 version
 
 * System dependencies
 
@@ -22,3 +19,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# How it looks the template
+![image](https://user-images.githubusercontent.com/1863670/242108494-71064409-bca8-48eb-99d4-a95a91520039.png)
